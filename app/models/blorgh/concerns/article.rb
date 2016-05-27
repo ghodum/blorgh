@@ -15,13 +15,13 @@ module Blorgh::Concerns::Article
       end
   end
 
-  def summary
-    "#{title}"
-  end
-
-  module ClassMethods
+  class_methods do
     def some_class_method
       "class_method"
     end
+  end
+
+  def summary
+    "#{title}"
   end
 end
