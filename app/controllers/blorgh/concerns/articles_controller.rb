@@ -59,6 +59,6 @@ module Blorgh::Concerns::ArticlesController
 
   # Only allow a trusted parameter "white list" through.
   def article_params
-    params.require(:article).permit(:title, :text, :author_name)
+    params.require(:article).permit(:title, :text)
   end
 end
